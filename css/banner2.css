@@ -1,0 +1,70 @@
+.banner {
+  border:1px solid #000;
+  width: 300px;
+  height: 250px;
+  background: linear-gradient(#f00, #BA0606);
+  font-family: sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.banner h1 {
+  position: relative; 
+  text-align: center;
+  margin: 0px;
+  -webkit-animation: text-slide 1s forwards;
+  -moz-animation: text-slide 1s forwards;
+}
+
+.banner p{
+  position: relative;
+  right: -145px;
+  margin: 0px;
+   
+}
+
+.banner img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  top: -250px;
+  left: -170px;
+  transition: transform 1s;
+}
+
+.banner img:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.banner .m {
+  font-size: 140px;
+  position: relative;
+  z-index: 200;
+  margin: 0px;
+  left: 160px;
+  font-family: cursive;
+  color: yellow;
+  transition: transform 1s;
+}
+
+.banner .m:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@-webkit-keyframes text-slide{
+  0%{ left: -100px;}
+  100%{ left: 0px;}
+  
+}
+
+@-moz-keyframes text-slide{
+  0%{ left: -100px;}
+  100%{ left: 0px;}
+  
+}
+
+
+
+
