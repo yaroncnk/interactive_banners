@@ -1,0 +1,60 @@
+.banner {
+  border:1px solid #000;
+  width: 300px;
+  height: 250px;
+}
+
+.banner .section {
+  width: 32%;
+  float: left;
+  border: 1px solid #000;
+  height: 238px;
+}
+
+.banner .section p{
+  text-align: center;
+}
+
+@-webkit-keyframes door{
+  0%{  transform: perspective(600px) rotateY(90deg);}
+  100%{  transform: perspective(600px) rotateY(0deg);}
+}
+
+@-moz-keyframes door{
+  0%{  transform: perspective(600px) rotateY(90deg);}
+  100%{  transform: perspective(600px) rotateY(0deg);}
+}
+
+.banner .sec1 {
+  transform: perspective(600px) rotateY(90deg);
+  transform-origin: 0px;
+  background: url("../images/2.png") no-repeat scroll -40px 20px / 181px auto red ;
+  -webkit-animation: door 1s forwards 1s; 
+  -moz-animation: door 1s forwards 1s;
+}
+
+.banner .sec2 {
+   transform: perspective(600px) rotateY(90deg);
+
+  background: url("../images/7.png") no-repeat scroll -40px 30px / 181px auto green;
+  transform-origin: 0px;
+  -webkit-animation: door 1s forwards 2s ; 
+  -moz-animation: door 1s forwards 2s;
+  
+}
+
+.banner .sec3 {
+    transform: perspective(600px) rotateY(90deg);
+
+  background: url("../images/8.png") no-repeat scroll -40px 30px / 181px auto white;
+  transform-origin: 0px;
+  -webkit-animation: door 2s forwards 3s; 
+  -moz-animation: door 2s forwards 3s;
+  
+}
+
+.banner .section:hover {
+  border: 1px solid red;
+  cursor: pointer;
+}
+
